@@ -5,7 +5,7 @@
  *
  * @module      Module
  * @version     0.0.1 (Documentation)
- * @summary     .....
+ * @summary     Check NPM for Update(s)
  *
  * @author      Jacob B. Sanders
  * @license     BSD 3-Clause License
