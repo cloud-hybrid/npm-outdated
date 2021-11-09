@@ -82,17 +82,12 @@ Subprocess.on("close", (code) => {
         console.warn("");
         console.warn("git add --all");
         console.warn("git commit --message \"Pre-Package Update(s)\"");
-        console.warn("git push [--set-upstream remote origin] ");
+        console.warn("git push [--set-upstream origin {...}] ");
 
         process.exit(0);
     } else {
         console.log("No Package(s) Available for Update(s)" + "\n");
 
         console.debug("[Debug] Exit Status Code" + ":", code);
-        console.warn("  - Ensure to Push Change(s) to Remote before Updating!");
-        console.warn("");
-        console.warn("git add --all");
-        console.warn("git commit --message \"Pre-Package Update(s)\"");
-        console.warn("git push [--set-upstream remote origin] ");
     }
 });
