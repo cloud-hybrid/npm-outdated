@@ -1,6 +1,6 @@
 {
     "name": "@cloud-technology/npm-outdated",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "type": "module",
     "description": "Asynchronous Subprocess Spawner & Handler",
     "main": "Start.js",
