@@ -80,9 +80,9 @@ Subprocess.on("close", (code) => {
         console.warn("\n" + "[Warning], Update(s) are Available");
         console.warn("  - Ensure to Push Change(s) to Remote before Updating!");
         console.warn("");
-        console.warn("git add --all");
-        console.warn("git commit --message \"Pre-Package Update(s)\"");
-        console.warn("git push [--set-upstream origin {...}] ");
+        console.warn("$ git add --all");
+        console.warn("$ git commit --message \"Pre-Package Update(s)\"");
+        console.warn("$ git push [--set-upstream origin {...}] ");
 
         process.exit(0);
     } else {
