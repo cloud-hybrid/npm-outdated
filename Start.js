@@ -77,7 +77,7 @@ Subprocess.on("error", (_) => {
 
 Subprocess.on("close", (code) => {
     if (code !== 0) {
-        console.warn("[Warning], Update(s) are Available");
+        console.warn("\n" + "[Warning], Update(s) are Available");
 
         process.exit(0);
     } else {
