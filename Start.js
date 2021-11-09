@@ -14,6 +14,7 @@
  * @package     {@link https://github.com/cloud-hybrid/cloud-technology @cloud-technology}
  *
  * @example
+ *
  *      // via package.json
  *      $ npm run start
  *
