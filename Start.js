@@ -1,8 +1,29 @@
+#!/usr/bin/env node
+
 /***
+ * @name        npm-outdated
  *
- * @type {NodeJS.Process}
+ * @module      Module
+ * @version     0.0.1 (Documentation)
+ * @summary     .....
  *
-***/
+ * @author      Jacob B. Sanders
+ * @license     BSD 3-Clause License
+ * @copyright   Cloud-Technology LLC. & Affiliates.
+ *
+ * @package     {@link https://github.com/cloud-hybrid/cloud-technology @cloud-technology}
+ *
+ * @example
+ *      // via package.json
+ *      $ npm run start
+ *
+ *      // via node_modules
+ *      $ ./node_modules/.bin/npm-check-outdated
+ *
+ *      // via $PATH
+ *      $ npm-check-outdated
+ *
+ */
 
 import Runtime from "process";
 import Child from "child_process";
@@ -54,5 +75,14 @@ Subprocess.on("error", (_) => {
     );
 });
 
-Subprocess.on("close", (_) => console.log("Exit Code: " + String(_)));
+Subprocess.on("close", (code) => {
+    if (code !== 0) {
+        console.warn("[Warning], Update(s) are Available");
 
+        process.exit(0);
+    } else {
+        console.log("No Package(s) Available for Update(s)" + "\n");
+
+        console.debug("[Debug] Exit Status Code" + ":", code);
+    }
+});

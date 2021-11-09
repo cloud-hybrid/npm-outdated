@@ -10,7 +10,7 @@
     "author": "Jacob B. Sanders",
     "license": "BSD-3-Clause",
     "bin": {
-        "npm-outdated": "Start.js"
+        "npm-check-outdated": "Start.js"
     },
     "devDependencies": {
         "@cloud-technology/npm-outdated": "cloud-hybrid/npm-outdated#Development"
